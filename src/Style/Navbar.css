@@ -1,0 +1,53 @@
+.maincontainer {
+  background-color: #263f61;
+}
+.logo {
+  width: 179px;
+  height: 44px;
+  margin-left: 80px;
+  top: 12px;
+  font-family: "Big John PRO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  background: linear-gradient(180deg, #ff5e62 0%, #ff9966 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+input::placeholder {
+    position: absolute;
+    width: 119px;
+    height: 24px;
+    left: 8px;
+    top: 10px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input{
+ box-sizing: border-box;
+position: absolute;
+width: 424px;
+height: 44px;
+left: 990px;
+top: 8px;
+background: rgba(255, 255, 255, 0.06);
+border: 1px solid rgba(255, 255, 255, 0.26);
+border-radius: 5px;
+}
+.btn{
+width: 48px;
+height: 44px;
+left: 376px;
+top: 0px;
+background: linear-gradient(180deg, #FF9966 0%, #FF5E62 100%);
+}

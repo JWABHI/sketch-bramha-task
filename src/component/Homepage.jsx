@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import MovieCards from './MovieCards';
-// import SearchBar from './SearchBar';
+import MovieCard from './MovieCard';
 import { movieContext } from '../Api/MovieContext';
 import axios from "axios"
 import Pagination from './Pagination';
 import { useParams } from 'react-router-dom';
+import banner from "../assets/banner.svg"
 
-export default function MainContainer({url}) {
+export default function Homepage({url}) {
     let [movies, setMovies] = useState([])
     let [pageSelected, setPageSelected] = useState(1)
     let movie = useParams(); 
@@ -32,10 +32,14 @@ export default function MainContainer({url}) {
     // console.log(movies)
   return (
     <React.Fragment>
+       
+      <div>
+                <img src={banner} alt="" style={{ width: "100%", height: "350px" }} />
+            </div>
         <movieContext.Provider value={movies}>
-        <MovieCards></MovieCards>
+        <MovieCard></MovieCard>
         </movieContext.Provider>
-        <footer className="d-flex justify-content-center mt-3"><Pagination setPageSelected={setPageSelected} pageSelected={pageSelected}></Pagination></footer>
+        <footer className="d-flex justify-content-center bg-black"><Pagination setPageSelected={setPageSelected} pageSelected={pageSelected}></Pagination></footer>
     </React.Fragment>
   )
 }

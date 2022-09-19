@@ -1,0 +1,78 @@
+.container2 {
+  background-color: black;
+  height:100%;
+}
+h3 {
+  position: relative;
+  top:50px;
+  left: 100px;
+color: white;
+font-family:Poppins ;
+  
+}
+.maincard{
+  border:1px solid black;
+}
+
+.cards{
+  top:50px;
+  position: relative;
+  min-width: 100px;
+  margin: 30px 13px !important;
+ 
+}
+.title{
+  height:100%;
+  width:100%;
+  position:absolute;
+  align-items: flex-end;
+}
+.card-body {
+  background-color: #263F61 ;
+  padding: 7px 14px !important;
+  
+}
+.card-img-top {
+  height: 100%;
+}
+.card-text {
+  font-weight: 600;
+  color: #000000;
+  margin: 0 !important;
+}
+.card-body {
+  margin: 0 !important;
+}
+.fa-star {
+  color: #FFE234;;
+}
+.pagination{
+  margin-top:40px
+}
+
+.pagination > li > button{
+  /* margin-top:40px; */
+  background-color: black !important;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  border: none;
+}
+
+.pagination > li > .pageNumb:hover{
+  color: #FF6A63 !important;
+}
+
+li > .next:hover, li > .prevhover{
+  color: white !important;
+}
+.play{
+  position: absolute;
+  margin-left: 260px;
+  bottom: 13px;
+  
+}
+
+
+
+
+
